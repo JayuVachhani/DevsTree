@@ -1,0 +1,55 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  color: rgb(14, 14, 14);
+  background-color: rgb(225, 226, 226);
+}
+.navbar a {
+  color: black;
+  text-decoration: none;
+}
+.navbarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.navbarLeft .companyLogo {
+  font-size: 30px;
+}
+.navbarRight {
+  display: flex;
+  gap: 60px;
+  font-size: 20px;
+}
+.navbarRight .allusers {
+  text-decoration: none;
+  color: black;
+}
+.navbar select {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+}
+.dropdown {
+  position: relative;
+  display: block;
+}
+
+.dropdown-content {
+  flex-direction: column;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  /* margin-left: -10px; */
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  color: rgb(87, 167, 65);
+}

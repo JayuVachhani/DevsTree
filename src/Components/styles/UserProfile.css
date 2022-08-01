@@ -1,0 +1,30 @@
+.profileSection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20vh;
+}
+.profileLeft {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 40px 0;
+}
+.profileRight {
+  width: 60%;
+  font-size: 25px;
+}
+.profileRight .userDetails {
+  width: 80%;
+  display: flex;
+  line-height: 10vh;
+  justify-content: space-between;
+}
+.actionBtn {
+  display: flex;
+  justify-content: space-between;
+}
+.loading {
+  font-size: 30px;
+  color: cadetblue;
+}
