@@ -1,12 +1,14 @@
-export const fetchAllUsers = (users) => {
-  return {
-    type: 'FETCH_USERS',
-    payload: users,
-  }
-}
-export const authenticatedUser = (user) => {
-  return {
-    type: 'USER_PROFILE_DETAILS',
-    payload: user,
+import axios from 'axios'
+import { allUsers, requestError, requestPending } from './UserReducer'
+
+export const fetchAllUsers = async (dispatch) => {
+  dispatch(requestPending())
+  try {
+    const fetchUsers = await axios.get(
+      'https://jsonplaceholder.typicode.com/users',
+    )
+    dispatch(allUsers(fetchUsers.data))
+  } catch (error) {
+    dispatch(requestError())
   }
 }

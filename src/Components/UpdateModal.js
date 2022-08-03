@@ -14,7 +14,7 @@ const UpdateModal = (props) => {
     dob: '',
   })
   const userId = sessionStorage.getItem('userId')
-
+  console.log(userId)
   const handleUpdate = (e) => {
     setUpdatedDetails({ ...updatedDetails, [e.target.name]: e.target.value })
   }

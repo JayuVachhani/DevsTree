@@ -48,7 +48,7 @@ const Login = () => {
       )
     })
     if (checkUser) {
-      dispatch(authenticatedUser(checkUser))
+      // dispatch(authenticatedUser(checkUser))
       sessionStorage.setItem('fakeJWT', fakeJWT.alg)
       sessionStorage.setItem('userId', checkUser.id)
       toast.success('Authentication Successful')
